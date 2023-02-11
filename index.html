@@ -32,11 +32,35 @@
             <ion-icon name="close-outline" class="closeBtn"></ion-icon>
           </span>
         </div>
+        <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
       </div>
       <div class="searchBox">
         <input type="text" placeholder="Search here..." />
       </div>
     </header>
+    <div class="container">
+      <h1>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+        alias.
+      </h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora cumque
+        sed porro illum, voluptate expedita corrupti aspernatur temporibus
+        magnam nesciunt cupiditate quibusdam voluptatibus necessitatibus.
+      </p>
+      <a href="#" class="btn">Lorem, ipsum dolor</a>
+    </div>
+    <section class="container">
+      <div>
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae eveniet
+          consequuntur itaque totam necessitatibus quos, a dolor. Illum
+          cupiditate et minus atque. Pariatur neque, quaerat aliquid sapiente
+          dolorum cumque eius?
+        </p>
+      </div>
+    </section>
     <!-- <div class="hero-section">
       <div class="hero-text">
         <h1>Product Name</h1>
@@ -60,6 +84,9 @@
       let searchBtn = document.querySelector(".searchBtn");
       let closeBtn = document.querySelector(".closeBtn");
       let searchBox = document.querySelector(".searchBox");
+      let header = document.querySelector("header");
+      let navigation = document.querySelector(".navigation");
+      let menuToggle = document.querySelector(".menuToggle");
 
       searchBtn.onclick = function () {
         searchBox.classList.add("active");
@@ -71,6 +98,10 @@
         searchBox.classList.remove("active");
         closeBtn.classList.remove("active");
         searchBtn.classList.remove("active");
+      };
+
+      menuToggle.onClick = function () {
+        header.classList.toggle("open");
       };
     </script>
   </body>
