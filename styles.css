@@ -5,6 +5,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background: #dee1e2;
   min-height: 100vh;
@@ -49,7 +53,7 @@ section {
   background-color: #f7f7f7;
 }
 
-header {
+.header {
   position: absolute;
   top: 0;
   left: 0;
@@ -61,6 +65,10 @@ header {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  height: 2rem;
 }
 
 .group {
@@ -203,7 +211,7 @@ cursor: pointer;
   }
 
   header.open .navigation li a {
-    font-size: 1.25em;
+    font-size: 1.25rem;
   }
 
   .hide {
@@ -211,38 +219,4 @@ cursor: pointer;
   }
 }
 
-
-.hero-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    align-items: center;
-    height: 500px;
-    background-color: lightgray;
-  }
-  
-  .hero-text {
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  img {
-    width: 100%;
-  }
-  
-  @media (max-width: 767px) {
-    .hero-section {
-      grid-template-columns: 1fr;
-      height: auto;
-    }
-  
-    img {
-      width: 80%;
-      margin: 0 auto;
-    }
-  }
   
