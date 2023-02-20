@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';
 }
 
 .grid {
@@ -135,3 +135,124 @@ section {
   width: 100%;
   object-fit: cover;
 }
+
+.gallery-container {
+  display: flex;
+  gap: 80px;
+}
+
+.gallery-container h2 {
+  font-size: 52px;
+  font-family: 'Playfair Display';
+  font-weight: normal;
+  margin: 0;
+}
+
+.subhead {
+  font-size: 18px;
+}
+
+.cta-btns {
+  margin: 50px 0;
+}
+
+.cta-btns, .secondary-cta {
+  display: flex;
+  gap: 20px;
+}
+
+.primary-cta {
+  background-color: beige;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  border-radius: 19px;
+  padding: 10px 20px;
+}
+
+.secondary-cta {
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding: 10px 0;
+}
+
+.secondary-cta svg {
+  width: 20px;
+}
+
+.left-col {
+  width: 45%;
+}
+
+.news {
+  display: flex;
+  gap: 30px;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.right-col {
+  flex-grow: 1;
+  display: grid;
+  gap: 23px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas: 
+  "left right"
+  "left bottom"
+  ;
+}
+
+.card {
+  background: gray;
+  border-radius: 8px;
+  padding: 11px;
+  display: flex;
+  align-items: end;
+  background-size: 150%;
+}
+
+.card1 {
+  grid-area: left;
+  background-image: url(https://www.freepik.com/free-psd/vending-machine-mockup_1386097.htm#query=wine%20fridge&position=40&from_view=search&track=ais);
+}
+
+.card2 {
+  /* grid-area: left; */
+  background-image: url(https://www.freepik.com/free-photo/beautiful-focused-woman-is-choosing-right-wine-customers-dark-wine-cellar_26606218.htm#query=wine%20fridge&position=19&from_view=search&track=ais);
+}
+
+.card3 {
+  /* grid-area: left; */
+  background-image: url(https://www.freepik.com/free-photo/cellar-with-bottles_947852.htm#query=wine%20fridge&position=13&from_view=search&track=ais);
+}
+
+.card-details {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-details a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card-details p {
+  font-size: 14px;
+  margin: 0;
+}
+
+p.product-price {
+  font-size: 18px;
+}
+
