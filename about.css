@@ -96,7 +96,7 @@ section {
 }
 
 .testimonials-container {
-  padding: 96px;
+  /* padding: 96px; */
 }
 
 .testimonials {
@@ -207,7 +207,6 @@ section {
 }
 
 .card {
-  background: gray;
   border-radius: 8px;
   padding: 11px;
   display: flex;
@@ -217,17 +216,15 @@ section {
 
 .card1 {
   grid-area: left;
-  background-image: url(https://www.freepik.com/free-psd/vending-machine-mockup_1386097.htm#query=wine%20fridge&position=40&from_view=search&track=ais);
+  background-image: url(./Images/cellar-with-bottles.jpg);
 }
 
 .card2 {
-  /* grid-area: left; */
-  background-image: url(https://www.freepik.com/free-photo/beautiful-focused-woman-is-choosing-right-wine-customers-dark-wine-cellar_26606218.htm#query=wine%20fridge&position=19&from_view=search&track=ais);
+  background-image: url(https://img.freepik.com/free-photo/beautiful-focused-woman-is-choosing-right-wine-customers-dark-wine-cellar_613910-17334.jpg?w=2000&t=st=1676971861~exp=1676972461~hmac=3ad0b8d3d5c73fedf32955d24f04edeb3ce7469efc1620370577c8f767a44b9b);
 }
 
 .card3 {
-  /* grid-area: left; */
-  background-image: url(https://www.freepik.com/free-photo/cellar-with-bottles_947852.htm#query=wine%20fridge&position=13&from_view=search&track=ais);
+  background-image: url(https://img.freepik.com/free-photo/woman-having-snacks-front-view_23-2149857573.jpg?t=st=1676972167~exp=1676972767~hmac=69501f648574942ff5a2297086ad04b07c52beb43e36928b2378c79c6c1d5ac2);
 }
 
 .card-details {
