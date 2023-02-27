@@ -338,6 +338,10 @@ font-family: 'Playfair Display';
     font-size: 20px;
     margin-bottom: 24px;
   }
+
+  .feature-description {
+    font-size: 1.6rem;
+  }
   
   .section-testimonials {
     /* padding: 96px 0; */
