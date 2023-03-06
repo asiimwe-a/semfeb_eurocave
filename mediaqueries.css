@@ -1,0 +1,14 @@
+/* Blow 1120px smaller desktops */
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .grid {
+        gap: 48px;
+    }
+
+    header, .container {
+        padding: 0 32px;
+    }
+}

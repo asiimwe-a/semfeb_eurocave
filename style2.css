@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 html {
@@ -56,19 +55,20 @@ font-family: 'Playfair Display';
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: ;
-    height: 9.6rem;
-    padding: 0 4.8rem;
+    background-color: white;
+    height: 7.2rem;
+    max-width: 1120px;
+    margin: 0 auto;
 }
 
 .header .logo {
-    height: 2.2rem;
+    height: 2.4rem;
 }
 
 .main-nav-list {
     list-style: none;
     display: flex;
-    gap: 3.2rem;
+    gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -91,8 +91,6 @@ font-family: 'Playfair Display';
 }
 
 .hero {
-    max-width: 112rem;
-    margin: 0 auto;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -113,6 +111,11 @@ font-family: 'Playfair Display';
     font-size: 2rem;
     line-height: 1.5;
     margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .btn:link,
@@ -149,10 +152,6 @@ font-family: 'Playfair Display';
     box-shadow: inset 0 0 0 3px #fff;
 }
 
-.hero-img {
-    width: 100%;
-}
-
 .margin-right-sm {
     margin-right: 1.6rem !important;
 }
@@ -164,26 +163,17 @@ font-family: 'Playfair Display';
   margin-bottom: 40px;
 }
 
-.head-text::after {
-  position: absolute;
-  content: '';
-  width: 520px;
-  height: 2px;
-  left: auto;
-  top: 50%;
-  margin-left: 17px;
-  background-color: black;
-}
-
 .head-text-description {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+  font-family: 'Playfair Display';
+  color: #111;
 }
 
 .head-text-sub-text {
   font-size: 18px;
-  color:#d3d0d0;
+  color:#bababa;
   width: 448px;
   height: 120px;
   margin-bottom: 40px;
@@ -217,6 +207,7 @@ font-family: 'Playfair Display';
     font-size: 2.4rem;
     font-family: 'Playfair Display';
     margin-bottom: 1.6rem;
+    color:#111;
   }
 
   .about-card-description {
@@ -232,7 +223,7 @@ font-family: 'Playfair Display';
   }
   
   .section-products-list {
-    padding: 96px 0;
+    padding: 24px 0 96px;
   }
   
   .product-number {
@@ -255,20 +246,20 @@ font-family: 'Playfair Display';
     font-weight: 700;
     color: #333;
     letter-spacing: -0.5px;
-    font-size: 44px;
+    font-size: 4.4rem;
     line-height: 1.2;
     margin-bottom: 96px;
   }
   
   .heading-tertiary {
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 1.2;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
   
   .subheading {
     display: inline-block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
     color: #cf711f;
     text-transform: uppercase;
@@ -290,32 +281,6 @@ font-family: 'Playfair Display';
   .head-text {
     font-size: 16px;
     position: relative;
-    margin-bottom: 40px;
-  }
-  
-  .head-text::after {
-    position: absolute;
-    content: '';
-    width: 520px;
-    height: 2px;
-    left: auto;
-    top: 50%;
-    margin-left: 17px;
-    background-color: black;
-  }
-  
-  .head-text-description {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 32px;
-    font-family: 'Playfair Display';
-  }
-  
-  .head-text-sub-text {
-    font-size: 18px;
-    color:#d3d0d0;
-    width: 448px;
-    height: 120px;
     margin-bottom: 40px;
   }
   
@@ -593,6 +558,7 @@ font-family: 'Playfair Display';
     resize: none;
     min-height: 220px;
     margin-bottom: 10px;
+    font-family: inherit;
   }
   
   .inputBox input[type="submit"] {
