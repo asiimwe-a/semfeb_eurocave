@@ -12,12 +12,16 @@ body {
     font-family: 'Poppins';
     line-height: 1;
     font-weight: 400;
-    color: #555;
+    color: #000000;
+}
+
+section {
+  padding: 96px 0;
 }
 
 .grid {
     display: grid;
-    gap: 96px;
+    gap: 9.6rem;
 }
 
 .grid--2-cols {
@@ -36,14 +40,14 @@ grid-template-columns: repeat(4,1fr);
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
   gap: 24px;
 }
-  
+
 .heading-primary,
 .heading-secondary 
 .heading-tertiary {
-font-weight: 700;
-color: #333;
-letter-spacing: -0.5px;
-font-family: 'Playfair Display';
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.05rem;
+  font-family: 'Playfair Display';
 }
 
 .container {
@@ -87,7 +91,7 @@ font-family: 'Playfair Display';
 
 .section-hero {
     background-color: #fff;
-    padding: 4.8rem 0 9.6rem 0;
+    padding: 4.8rem 0 4.8rem 0;
 }
 
 .hero {
@@ -104,13 +108,13 @@ font-family: 'Playfair Display';
     line-height: 1.05;
     color: #333;
     letter-spacing: -0.5px;
-    margin-bottom: 3.2rem;
+    margin-bottom: 2.4rem;
 }
 
 .hero-description {
     font-size: 2rem;
     line-height: 1.5;
-    margin-bottom: 4.8rem;
+    margin-bottom: 3.2rem;
 }
 
 .hero-img {
@@ -164,26 +168,27 @@ font-family: 'Playfair Display';
 }
 
 .head-text-description {
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 2rem;
   font-family: 'Playfair Display';
   color: #111;
 }
 
 .head-text-sub-text {
-  font-size: 18px;
-  color:#bababa;
+  font-size: 2rem;
+  color:#bcb1b1;
   width: 448px;
   height: 120px;
   margin-bottom: 40px;
+  font-weight: 200;
 }
 
 .about-container {
     display: grid;
     padding: 0;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
     margin: 0 auto;
     font: 500 100%/1.5 system-ui;
   }
@@ -192,6 +197,7 @@ font-family: 'Playfair Display';
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 10px;
   }
 
   .about-card {
@@ -216,10 +222,11 @@ font-family: 'Playfair Display';
   }
 
   .featured-product-image {
-    height: 240px;
-      width: 100%;
-      object-fit: cover;
-      object-position: 0% 60%;
+    height: 24rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 60%;
+    border-radius: 10px;
   }
   
   .section-products-list {
@@ -227,19 +234,20 @@ font-family: 'Playfair Display';
   }
   
   .product-number {
-    font-size: 86px;
+    font-size: 7.2rem;
     font-weight: 600;
     color: #ddd;
   }
   
   .product-description {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.8;
   }
   
   .product-img {
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
   }
   
   .heading-secondary {
@@ -265,23 +273,15 @@ font-family: 'Playfair Display';
     text-transform: uppercase;
     margin-bottom: 16px;
   }
-
-  .heading-primary,
-  .heading-secondary 
-  .heading-tertiary {
-    font-weight: 700;
-    color: #333;
-    letter-spacing: -0.5px;
-  }
-  
-  section {
-    padding: 96px 0;
-  }
   
   .head-text {
     font-size: 16px;
     position: relative;
     margin-bottom: 40px;
+  }
+
+  .section-features {
+    padding: 0;
   }
   
   .feature {
@@ -300,26 +300,22 @@ font-family: 'Playfair Display';
   }
   
   .feature-title {
-    font-size: 20px;
+    font-size: 2rem;
     margin-bottom: 24px;
   }
 
   .feature-description {
     font-size: 1.6rem;
   }
-  
-  .section-testimonials {
-    /* padding: 96px 0; */
-  }
-  
-  .testimonials-container {
-    /* padding: 96px; */
+
+  .feature-list {
+    gap: 4rem;
   }
   
   .testimonials {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 48px;
+    gap: 4.8rem;
   }
   
   .testimonial-image {
@@ -330,39 +326,14 @@ font-family: 'Playfair Display';
   }
   
   .testimonial-text {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.8;
     margin-bottom: 16px;
   }
   
   .testimonial-name {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #777;
-  }
-  
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    padding: 16px;
-  }
-  
-  .gallery-item-image {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  .gallery-container {
-    display: flex;
-    gap: 80px;
-  }
-  
-  .gallery-container h2 {
-    font-size: 52px;
-    font-family: 'Playfair Display';
-    font-weight: normal;
-    margin: 0;
   }
   
   .subhead {
@@ -415,7 +386,7 @@ font-family: 'Playfair Display';
   .right-col {
     flex-grow: 1;
     display: grid;
-    gap: 23px;
+    gap: 1.6rem;
     grid-template-columns: repeat(2, auto);
     grid-template-areas: 
     "left right"
@@ -511,7 +482,7 @@ font-family: 'Playfair Display';
   .contact h3 {
     color: black;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-bottom: 18px;
   }
   
@@ -545,7 +516,7 @@ font-family: 'Playfair Display';
   
   .inputBox input {
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     outline: none;
     border: 1px solid #333;
   }
@@ -605,12 +576,12 @@ font-family: 'Playfair Display';
   
   .info .infoBox div p {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.2rem;
   }
   
   .info .infoBox div a {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.2rem;
     text-decoration: none;
   }
   
@@ -625,7 +596,7 @@ font-family: 'Playfair Display';
   }
   
   .sci li a {
-    font-size: 2em;
+    font-size: 2rem;
     color: #ccc;
   }
   
@@ -707,7 +678,7 @@ font-family: 'Playfair Display';
 }
 
 .copyright {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #767676;
     margin-top: auto;
 }
@@ -720,7 +691,7 @@ font-family: 'Playfair Display';
 
 .contacts {
     font-style: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.6;
 }
 
@@ -729,7 +700,7 @@ font-family: 'Playfair Display';
 }
 
 .footer-heading {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 40px;
 }
@@ -744,7 +715,7 @@ font-family: 'Playfair Display';
 .footer-link:link,
 .footer-link:visited {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #767676;
     transition: all 0.3s;
 }
