@@ -6,6 +6,8 @@
 
 html {
     font-size: 62.5%;
+
+    overflow-x: hidden;
 }
 
 body {
@@ -13,10 +15,13 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #000000;
+
+    /* only works if there's nothing absolutely positioned in relation */
+    overflow-x: hidden;
 }
 
 section {
-  padding: 96px 0;
+  padding: 9.6rem 0;
 }
 
 .grid {
@@ -63,6 +68,7 @@ grid-template-columns: repeat(4,1fr);
     height: 7.2rem;
     max-width: 1120px;
     margin: 0 auto;
+    position: relative;
 }
 
 .header .logo {
@@ -89,9 +95,27 @@ grid-template-columns: repeat(4,1fr);
     color: rgb(168, 20, 20);
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 .section-hero {
     background-color: #fff;
-    padding: 4.8rem 0 4.8rem 0;
+    padding: 4.8rem 0;
 }
 
 .hero {
@@ -148,6 +172,7 @@ grid-template-columns: repeat(4,1fr);
 .btn--outline:visited {
     background-color: #fff;
     color: rgb(109, 27, 27);
+    border: 1px solid rgb(109, 27, 27);
 }
 
 .btn--outline:hover,
@@ -161,11 +186,6 @@ grid-template-columns: repeat(4,1fr);
 }
 
 /* ABOUT SECTION */
-.head-text {
-  font-size: 16px;
-  position: relative;
-  margin-bottom: 40px;
-}
 
 .head-text-description {
   font-size: 3.6rem;
@@ -219,6 +239,7 @@ grid-template-columns: repeat(4,1fr);
   .about-card-description {
     font-size: 1.8rem;
     font-family: 'Poppins';
+    color: #555;
   }
 
   .featured-product-image {
@@ -230,7 +251,7 @@ grid-template-columns: repeat(4,1fr);
   }
   
   .section-products-list {
-    padding: 24px 0 96px;
+    padding: 2.4rem 0 9.6rem;
   }
   
   .product-number {
@@ -256,7 +277,7 @@ grid-template-columns: repeat(4,1fr);
     letter-spacing: -0.5px;
     font-size: 4.4rem;
     line-height: 1.2;
-    margin-bottom: 96px;
+    margin-bottom: 9.6rem;
   }
   
   .heading-tertiary {
@@ -271,13 +292,7 @@ grid-template-columns: repeat(4,1fr);
     font-weight: 500;
     color: #cf711f;
     text-transform: uppercase;
-    margin-bottom: 16px;
-  }
-  
-  .head-text {
-    font-size: 16px;
-    position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 1.6rem;
   }
 
   .section-features {
@@ -286,7 +301,7 @@ grid-template-columns: repeat(4,1fr);
   
   .feature {
     grid-template-columns: 1fr 4fr;
-    gap: 24px;
+    gap: 2.4rem;
   }
   
   .feature-image {
@@ -360,15 +375,15 @@ grid-template-columns: repeat(4,1fr);
   }
   
   .secondary-cta {
-    font-size: 18px;
+    font-size: 1.8rem;
     text-decoration: none;
     display: block;
     color: black;
-    padding: 10px 0;
+    padding: 1rem 0;
   }
   
   .secondary-cta svg {
-    width: 20px;
+    width: 2rem;
   }
   
   .left-col {
@@ -438,7 +453,7 @@ grid-template-columns: repeat(4,1fr);
   }
   
   p.product-price {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   
   
@@ -516,7 +531,7 @@ grid-template-columns: repeat(4,1fr);
   
   .inputBox input {
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     outline: none;
     border: 1px solid #333;
     border-radius: 4px;
@@ -524,7 +539,7 @@ grid-template-columns: repeat(4,1fr);
   
   .inputBox textarea {
     padding: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     outline: none;
     border: 1px solid #333;
     resize: none;
@@ -537,7 +552,7 @@ grid-template-columns: repeat(4,1fr);
   .inputBox input[type="submit"] {
     background: ;
     color: #aaa;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     max-width: 12rem;
     font-weight: 500;
     cursor: pointer;
@@ -548,11 +563,6 @@ grid-template-columns: repeat(4,1fr);
   
   }
   
-  .info {
-    background: rgb(109, 27, 27);
-  
-  }
-  
   .info h3 {
   color: #fff;
   }
@@ -560,7 +570,7 @@ grid-template-columns: repeat(4,1fr);
   .info .infoBox div {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   
   .info .infoBox div span {
@@ -571,30 +581,30 @@ grid-template-columns: repeat(4,1fr);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     border-radius: 50%;
     margin-right: 1.5rem;
   }
   
   .info .infoBox div p {
-    color: #fff;
-    font-size: 1.2rem;
+    color: #333;
+    font-size: 1.6rem;
   }
   
   .info .infoBox div a {
-    color: #fff;
-    font-size: 1.2rem;
+    color: #333;
+    font-size: 1.6rem;
     text-decoration: none;
   }
   
   .sci {
-    margin-top: 40px;
+    margin-top: 4rem;
     display: flex;
   }
   
   .sci li {
     list-style: none;
-    margin-right: 15px;
+    margin-right: 1.5rem;
   }
   
   .sci li a {
@@ -671,7 +681,7 @@ grid-template-columns: repeat(4,1fr);
 
 .footer-logo {
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: 3.2rem;
 }
 
 .social-icon {
@@ -688,7 +698,7 @@ grid-template-columns: repeat(4,1fr);
 .social-links {
     list-style: none;
     display: flex;
-    gap: 24px;
+    gap: 2.4rem;
 }
 
 .contacts {
@@ -698,7 +708,7 @@ grid-template-columns: repeat(4,1fr);
 }
 
 .address {
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
 }
 
 .footer-heading {
