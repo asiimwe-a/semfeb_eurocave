@@ -383,11 +383,24 @@
         margin-top: 2rem;
     }
 
+    .formBox .row50 {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+
 }
 
 /* 320px */
 @media (max-width: 20em) {
     html {
         font-size: 38%;
+    }
+
+    .hero-text-box {
+        padding: 0;
     }
 }
