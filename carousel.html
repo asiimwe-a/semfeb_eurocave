@@ -18,18 +18,31 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./carousel-style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="owl-carousel">
-      <div><img src="./Images/pexels-curtis-adams-5502249.jpg" alt="" /></div>
-      <div><img src="./Images/pexels-ata-ebem-11021160.jpg" alt="" /></div>
-      <div>Your Content</div>
-      <div>Your Content</div>
-      <div><img src="./Images/pexels-curtis-adams-5502249.jpg" alt="" /></div>
-      <div><img src="./Images/pexels-ata-ebem-11021160.jpg" alt="" /></div>
-      <div>Your Content</div>
+      <div>
+        <img src="./Images/pexels-curtis-adams-5502249.jpg" alt="" />
+      </div>
+      <div>
+        <img src="./Images/pexels-ata-ebem-11021160.jpg" alt="" />
+      </div>
+      <div>
+        <img src="./Images/pexels-curtis-adams-5502249.jpg" alt="" />
+      </div>
+      <div>
+        <img src="./Images/pexels-ata-ebem-11021160.jpg" alt="" />
+      </div>
+      <div>
+        <img src="./Images/pexels-curtis-adams-5502249.jpg" alt="" />
+      </div>
+      <div>
+        <img src="./Images/pexels-ata-ebem-11021160.jpg" alt="" />
+      </div>
     </div>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
       integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
@@ -43,14 +56,21 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+      $(document).ready(() => {
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
           items: 4,
           loop: true,
           margin: 10,
           autoplay: true,
           autoplayTimeout: 1000,
           autoplayHoverPause: true,
+        });
+        $(".play").on("click", function () {
+          owl.trigger("play.owl.autoplay", [1000]);
+        });
+        $(".stop").on("click", function () {
+          owl.trigger("stop.owl.autoplay");
         });
       });
     </script>
