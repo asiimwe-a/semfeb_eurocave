@@ -101,9 +101,20 @@ grid-template-columns: repeat(4,1fr);
   background: #6D1B1B;
   color: #fff;
   padding: 6px;
+  transition: all 0.5s ease;
  }
- 
 
+.main-nav-list > li:nth-child(4) > a:nth-child(1):link,
+.main-nav-list > li:nth-child(4) > a:nth-child(1):active {
+  transition: all 0.5s ease;
+}
+
+.main-nav-list > li:nth-child(4) > a:nth-child(1):hover,
+.main-nav-list > li:nth-child(4) > a:nth-child(1):active {
+  background: #FFF;
+  color: #6D1B1B;
+}
+ 
 .btn-mobile-nav {
   border: none;
   background: none;
@@ -168,7 +179,7 @@ grid-template-columns: repeat(4,1fr);
   padding: 1.6rem 3.2rem;
   border-radius: 10px;
   text-decoration: none;
-  transition: background-color 0.6s ;
+  transition: background-color 0.6s ease;
 }
 
 .btn--full:link,
@@ -279,6 +290,12 @@ grid-template-columns: repeat(4,1fr);
     font-size: 1.8rem;
     line-height: 1.8;
   }
+
+  .product-img-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   
   .product-img {
     width: 100%;
@@ -294,7 +311,7 @@ grid-template-columns: repeat(4,1fr);
   }
 
   .section-other-products {
-    padding: 4rem 0;
+    padding: 4.8rem 0 9.6rem;  
   }
 
   .other-products {
@@ -302,12 +319,10 @@ grid-template-columns: repeat(4,1fr);
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-auto-rows: 30rem;
     gap: 2rem;
-    /* padding: 10rem 0; */
   }
   
   .other-product-card {
     background: #FFF;
-    /* padding: 0.8rem; */
     border-radius: 10px;
   }
   
@@ -330,6 +345,15 @@ grid-template-columns: repeat(4,1fr);
     font-weight: 600;
     margin-top: 1.6rem;
   }
+
+  div.other-product-card:nth-child(4) > p:nth-child(4) > span:nth-child(1) {
+    margin: 0;
+    padding: 0 1rem 0;
+   }
+   
+   .other-product-card span a {
+    color: #cf711f;
+   }   
   
   .heading-secondary {
     font-weight: 700;
@@ -480,14 +504,16 @@ grid-template-columns: repeat(4,1fr);
   .card1 {
     grid-area: left;
     background-image: url(./Images/cellar-with-bottles.jpg);
+    background-repeat: no-repeat;
+    background-size: 500%;
   }
   
   .card2 {
-    background-image: url(https://img.freepik.com/free-photo/beautiful-focused-woman-is-choosing-right-wine-customers-dark-wine-cellar_613910-17334.jpg?w=2000&t=st=1676971861~exp=1676972461~hmac=3ad0b8d3d5c73fedf32955d24f04edeb3ce7469efc1620370577c8f767a44b9b);
+    background-image: url(./Images/Testimonials/sierra-bar.jpg);
   }
   
   .card3 {
-    background-image: url(https://img.freepik.com/free-photo/woman-having-snacks-front-view_23-2149857573.jpg?t=st=1676972167~exp=1676972767~hmac=69501f648574942ff5a2297086ad04b07c52beb43e36928b2378c79c6c1d5ac2);
+    background-image: url(./Images/Testimonials/sarova-panafrica-private-dining.jpg);
   }
   
   .card-details {
