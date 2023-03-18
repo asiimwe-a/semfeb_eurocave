@@ -486,18 +486,14 @@ grid-template-columns: repeat(4,1fr);
   }
   
   .right-col {
-    flex-grow: 1;
     display: grid;
-    gap: 1.6rem;
-    grid-template-columns: repeat(2, auto);
-    grid-template-areas: 
-    "left right"
-    "left bottom"
-    ;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
   }
   
   .card {
-    border-radius: 8px;
+    border-radius: 10px;
+    grid-row: span 6;
     padding: 1rem;
     display: flex;
     align-items: end;
@@ -505,10 +501,7 @@ grid-template-columns: repeat(4,1fr);
   }
   
   .card1 {
-    grid-area: left;
     background-image: url(./Images/cellar-with-bottles.jpg);
-    background-repeat: no-repeat;
-    background-size: 500%;
   }
   
   .card2 {
@@ -517,6 +510,10 @@ grid-template-columns: repeat(4,1fr);
   
   .card3 {
     background-image: url(./Images/Testimonials/sarova-panafrica-private-dining.jpg);
+  }
+
+  .card4 {
+    background-image: url(./Images/cellar-with-bottles.jpg);
   }
   
   .card-details {
@@ -649,10 +646,6 @@ grid-template-columns: repeat(4,1fr);
     background: #d88d4b;
   }
   
-  .inputBox ::placeholder {
-  
-  }
-  
   .info h3 {
   color: #fff;
   }
@@ -714,50 +707,6 @@ grid-template-columns: repeat(4,1fr);
     width: 100%;
     height: 100%;
   }
-  
-  
-  /* RESPONSIVE CTA MEDIA QUERIES */
-  /* @media (max-width: 991px) {
-    body {
-        background: #03a9f5;
-    }
-  
-    .contactUs {
-        padding: 20px;
-    }
-  
-    .contact-box {
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "form"
-        "info"
-        "map";
-    }
-  
-    .contact .form .info {
-        padding: 30px;
-    }
-  
-    .contact .map {
-        min-height: 300px;
-        padding: 0;
-    }
-  
-    .formBox .row50 {
-        display: flex;
-        gap: 0;
-        flex-direction: column;
-    }
-  
-    .inputBox {
-        width: 100%;
-    }
-    
-  } */
-  
 
 .footer {
   padding: 12.8rem 0;
@@ -772,6 +721,10 @@ grid-template-columns: repeat(4,1fr);
 .footer-logo {
     display: block;
     margin-bottom: 3.2rem;
+}
+
+.footer-logo img {
+  width: 60%;
 }
 
 .social-icon {

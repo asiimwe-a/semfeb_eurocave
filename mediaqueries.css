@@ -290,8 +290,31 @@
         font-size: 1.6rem;
     }
 
+    .section-testimonials.grid {
+        grid-template-columns: 1fr;
+    }
+
+    .right-col{
+        grid-row: span 10;    
+    }
+
     .inputBox textarea {
         min-height: 12rem;
+    }
+
+    .grid--footer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .logo-col,
+    .address-col {
+        grid-column: span 3;
+    }
+
+    .nav-col {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
     }
 }
 
