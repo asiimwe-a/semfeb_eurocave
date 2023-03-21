@@ -17,17 +17,22 @@
     />
     <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="./mediaqueries.css" />
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
     <script defer src="./script.js"></script>
     <title>EuroCave | Semfeb</title>
   </head>
 
   <body>
     <header class="header">
-      <img
-        src="./Images/logo_eurocave.f5db0ba2.svg"
-        alt="EuroCave brand logo"
-        class="logo"
-      />
+      <a href="#"
+        ><img
+          src="./Images/logo_eurocave.f5db0ba2.svg"
+          alt="EuroCave brand logo"
+          class="logo"
+      /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Home</a></li>
@@ -43,35 +48,32 @@
       </button>
     </header>
 
-    <section class="section-hero">
-      <div class="hero container">
-        <div class="hero-text-box">
-          <h1 class="heading-primary">
-            Discover the Art of Wine Storage with EuroCave
-          </h1>
-          <p class="hero-description">
-            Experience the perfect storage and preservation solution for your
-            wine collection with EuroCave wine cabinets, brought to you by
-            Semfeb Limited.
-          </p>
-          <!-- <a href="#" class="btn btn--full margin-right-sm"
-            >Start your journey</a
-          > -->
-          <button>
-            <a href="#about" class="btn btn--outline">Learn more... &darr;</a>
-          </button>
-        </div>
-        <div class="hero-img-box">
-          <img
-            src="https://www.eurocave.com/media/images/97/square/w4961/1658506849/EC-MODULOX-IN-SITU-LIVING-ROOM-2-HD.jpg"
-            alt="EuroCave Wine Cabinet"
-            class="hero-img"
-          />
-        </div>
-      </div>
-    </section>
-
     <main>
+      <section class="section-hero container">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Discover the Art of Wine Storage with EuroCave
+            </h1>
+            <p class="hero-description">
+              Experience the perfect storage and preservation solution for your
+              wine collection with EuroCave wine cabinets, brought to you by
+              Semfeb Limited.
+            </p>
+            <button>
+              <a href="#about" class="btn btn--outline">Learn more... &darr;</a>
+            </button>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="https://www.eurocave.com/media/images/97/square/w4961/1658506849/EC-MODULOX-IN-SITU-LIVING-ROOM-2-HD.jpg"
+              alt="EuroCave Wine Cabinet"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+
       <section class="section-about" id="about">
         <div class="section-head container">
           <div class="subheading">ABOUT US</div>
