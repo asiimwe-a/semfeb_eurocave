@@ -17,9 +17,10 @@
     />
     <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="./mediaqueries.css" />
-
+    <script defer src="./script.js"></script>
     <title>EuroCave | Semfeb</title>
   </head>
+
   <body>
     <header class="header">
       <img
@@ -30,9 +31,9 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Home</a></li>
-          <li><a class="main-nav-link" href="#">About Us</a></li>
-          <li><a class="main-nav-link" href="#">Products</a></li>
-          <li><a class="main-nav-link" href="#">Get in touch</a></li>
+          <li><a class="main-nav-link" href="#about">About Us</a></li>
+          <li><a class="main-nav-link" href="#products">Products</a></li>
+          <li><a class="main-nav-link" href="#cta">Get in touch</a></li>
         </ul>
       </nav>
 
@@ -41,6 +42,7 @@
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
+
     <section class="section-hero">
       <div class="hero container">
         <div class="hero-text-box">
@@ -56,7 +58,7 @@
             >Start your journey</a
           > -->
           <button>
-            <a href="#" class="btn btn--outline">Learn more... &darr;</a>
+            <a href="#about" class="btn btn--outline">Learn more... &darr;</a>
           </button>
         </div>
         <div class="hero-img-box">
@@ -70,16 +72,16 @@
     </section>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="section-head container">
           <div class="subheading">ABOUT US</div>
           <div class="head-text-description">EuroCave X Semfeb</div>
           <div class="head-text-sub-text">
             EuroCave has partnered with Semfeb Limited in Kenya to distribute
-            their wine products in Kenya and nearby regions. The partnership
-            allows EuroCave to expand its presence in the African market and
-            offer its premium quality wine storage solutions to wine enthusiasts
-            in the region.
+            their wine products in Kenya and East Africa at large. The
+            partnership allows EuroCave to expand its presence in the African
+            market and offer its premium quality wine storage solutions to wine
+            enthusiasts in the region.
           </div>
         </div>
         <div class="about-container container">
@@ -121,7 +123,7 @@
           </div>
         </div>
       </section>
-      <section class="section-products">
+      <section class="section-products" id="products">
         <div class="section-head container">
           <div class="subheading">PRODUCTS</div>
           <div class="head-text-description">OUR FEATURED PRODUCTS</div>
@@ -147,7 +149,7 @@
         <div class="products-container container grid grid--2-cols">
           <!-- STEP-1 -->
           <div class="product-text-box">
-            <p class="product-number">01</p>
+            <p class="product-number" id="wine-art">01</p>
             <h3 class="heading-tertiary">Wine Art</h3>
             <p class="product-description">
               True two-in-one, the Wine Art is equipped with an exclusive system
@@ -169,7 +171,7 @@
           </div>
           <!-- STEP-2 -->
           <div class="product-text-box">
-            <p class="product-number">02</p>
+            <p class="product-number" id="pure-range">02</p>
             <h3 class="heading-tertiary">Pure Range</h3>
             <p class="product-description">
               Dedicated to the aging and serving of wine, the Pure range
@@ -194,7 +196,7 @@
 
           <!-- STEP-3 -->
           <div class="product-text-box">
-            <p class="product-number">03</p>
+            <p class="product-number" id="premiere-range">03</p>
             <h3 class="heading-tertiary">Premiere Range</h3>
             <p class="product-description">
               A chic and customizable cellar with a wide choice of modern and
@@ -217,7 +219,7 @@
           </div>
         </div>
       </section>
-      <section class="section-other-products">
+      <section class="section-other-products" id="others">
         <div class="section-head container">
           <div class="subheading">OUR OTHER EUROCAVE PRODUCTS</div>
           <div class="head-text-sub-text">
@@ -266,7 +268,7 @@
           </div>
         </div>
       </section>
-      <section class="section-features">
+      <section class="section-features" id="features">
         <div class="section-head container">
           <div class="subheading">FEATURES</div>
           <div class="head-text-description">WHY USE EUROCAVE?</div>
@@ -366,7 +368,10 @@
         </div>
       </section>
       <section>
-        <div class="section-testimonials grid grid--2-cols container">
+        <div
+          class="section-testimonials grid grid--2-cols container"
+          id="testimonials"
+        >
           <div class="testimonials-container">
             <span class="subheading">Testimonials</span>
             <h2 class="heading-secondary">
@@ -460,7 +465,7 @@
         </div>
       </section>
       <!-- CTA -->
-      <section class="section-contact">
+      <section class="section-contact" id="cta">
         <div class="contact-container container">
           <div class="contact-title">
             <h2 class="subheading">Get in Touch</h2>
@@ -550,14 +555,14 @@
     <footer class="footer">
       <div class="container grid grid--footer">
         <div class="logo-col">
-          <a href="" class="footer-logo">
+          <a href="#" class="footer-logo">
             <img
               src="./Images/logo_eurocave.f5db0ba2.svg"
               alt=""
               class="logo"
             />
           </a>
-          <a href="" class="footer-logo">
+          <a href="#" class="footer-logo">
             <img src="./Images/Semfeb_Logo1_1.png" alt="" class="logo" />
           </a>
 
@@ -599,27 +604,32 @@
         <nav class="nav-col">
           <p class="footer-heading">Products</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Wine Art</a></li>
-            <li><a class="footer-link" href="#">Pure Range</a></li>
-            <li><a class="footer-link" href="#">Premiere Range</a></li>
-            <li><a class="footer-link" href="#">Others</a></li>
+            <li><a class="footer-link" href="#wine-art">Wine Art</a></li>
+            <li><a class="footer-link" href="#pure-range">Pure Range</a></li>
+            <li>
+              <a class="footer-link" href="#premiere-range">Premiere Range</a>
+            </li>
+            <li><a class="footer-link" href="#others">Others</a></li>
           </ul>
         </nav>
         <nav class="nav-col">
-          <p class="footer-heading">Account</p>
+          <p class="footer-heading">Company</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Create Account</a></li>
-            <li><a class="footer-link" href="#">Sign in</a></li>
-            <li><a class="footer-link" href="#">iOS app</a></li>
-            <li><a class="footer-link" href="#">Android app</a></li>
+            <li><a class="footer-link" href="#about">About us</a></li>
+            <li><a class="footer-link" href="#cta">For Business</a></li>
+            <li><a class="footer-link" href="#cta">Partnerships</a></li>
+            <li><a class="footer-link" href="#cta">Careers</a></li>
           </ul>
         </nav>
         <nav class="nav-col">
-          <p class="footer-heading">Account</p>
+          <p class="footer-heading">Quick Links</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Create Account</a></li>
-            <li><a class="footer-link" href="#">Sign in</a></li>
-            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#products">Products</a></li>
+            <li><a class="footer-link" href="#features">Features</a></li>
+            <li>
+              <a class="footer-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li><a class="footer-link" href="#testimonials">Gallery</a></li>
           </ul>
         </nav>
       </div>
