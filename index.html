@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Discover EuroCave's premium wine storage solutions through SemFeb. We distribute EuroCave's range of wine cabinets, cellars, and accessories designed to preserve and showcase your wine collection. Explore our selection of high-quality wine storage products at SemFeb.com."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +19,7 @@
       type="image/svg+xml"
       href="./Images/favicon.4a5c3603.png"
     />
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./mediaqueries.css" />
     <script
       defer
@@ -27,25 +31,27 @@
 
   <body>
     <header class="header">
-      <a href="#"
-        ><img
-          src="./Images/logo_eurocave.f5db0ba2.svg"
-          alt="EuroCave brand logo"
-          class="logo"
-      /></a>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Home</a></li>
-          <li><a class="main-nav-link" href="#about">About Us</a></li>
-          <li><a class="main-nav-link" href="#products">Products</a></li>
-          <li><a class="main-nav-link" href="#cta">Get in touch</a></li>
-        </ul>
-      </nav>
+      <div class="header-div container">
+        <a href="#"
+          ><img
+            src="./Images/logo_eurocave.f5db0ba2.svg"
+            alt="EuroCave brand logo"
+            class="logo"
+        /></a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">Home</a></li>
+            <li><a class="main-nav-link" href="#about">About Us</a></li>
+            <li><a class="main-nav-link" href="#products">Products</a></li>
+            <li><a class="main-nav-link" href="#cta">Get in touch</a></li>
+          </ul>
+        </nav>
 
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
     </header>
 
     <main>
@@ -66,7 +72,7 @@
           </div>
           <div class="hero-img-box">
             <img
-              src="https://www.eurocave.com/media/images/97/square/w4961/1658506849/EC-MODULOX-IN-SITU-LIVING-ROOM-2-HD.jpg"
+              src="./Images/webp/hero-img.webp"
               alt="EuroCave Wine Cabinet"
               class="hero-img"
             />
@@ -98,7 +104,7 @@
             </div>
             <div class="about-card-img">
               <img
-                src="https://images.pexels.com/photos/2272939/pexels-photo-2272939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="./Images/webp/made-in-france.webp"
                 alt="France"
                 height=""
                 width=""
@@ -116,8 +122,8 @@
             </div>
             <div class="about-card-img">
               <img
-                src="./Images/nairobi-city.jpg"
-                alt="A picture of Nairobi city in Kenya."
+                src="./Images/webp/nairobi-city-c.webp"
+                alt="A landscape view of Nairobi city in Kenya."
                 height=""
                 width=""
               />
@@ -140,7 +146,7 @@
         <div class="products-container container">
           <div class="featured-product container">
             <img
-              src="./Images/EP-RESTAURANT-PAPA-DUBAI-INSPIRATIONx4-WINE-BAR__(3).jpg"
+              src="./Images/webp/eurocave-dubai.webp"
               alt=""
               class="featured-product-image"
             />
@@ -166,8 +172,8 @@
           </div>
           <div class="product-img-box">
             <img
-              src="https://eurocelcanada.com/new/wp-content/uploads/2020/03/EC-WINE-ART-IN-SITU-LIVING-ROOM.jpg"
-              alt=""
+              src="./Images/webp/wine-art-c.webp"
+              alt="Image showing the Eurocave Wine Art cabinet."
               class="product-img"
             />
           </div>
@@ -190,8 +196,8 @@
 
           <div class="product-img-box">
             <img
-              src="./Images/eurocave-pure-collection.jpg"
-              alt=""
+              src="./Images/webp/eurocave-pure-collection-c.webp"
+              alt="Image showing the Pure range line of Eurocave wine cabinets."
               class="product-img"
             />
           </div>
@@ -214,8 +220,8 @@
 
           <div class="product-img-box">
             <img
-              src="./Images/eurocave-premiere-collection.jpg"
-              alt=""
+              src="./Images/webp/eurocave-premiere-collection-c.webp"
+              alt="Image showing the Premiere range line of Eurocave wine cabinets."
               class="product-img"
             />
           </div>
@@ -234,30 +240,36 @@
         </div>
         <div class="other-products container">
           <div class="other-product-card">
-            <img src="./Images/sowine-pro.jpg" alt="" />
+            <img
+              src="./Images/webp/sowine-pro-c.webp"
+              alt="Image showing the Eurocave Sowine pro wine cabinet."
+            />
             <span class="tag">Serving</span>
             <span class="tag">14 bottles</span>
             <p class="name">Sowine Pro</p>
           </div>
           <div class="other-product-card">
-            <img src="./Images/classic_11.jpg" alt="" />
+            <img
+              src="./Images/webp/classic_11.webp"
+              alt="Image of the classic range of Eurocave wine cabinets."
+            />
             <span class="tag">Aging</span>
             <span class="tag">Preserving</span>
             <span class="tag">upto 235 bottles</span>
             <p class="name">Classic Range</p>
           </div>
           <div class="other-product-card">
-            <img src="./Images/professional-range.jpeg" alt="" />
+            <img
+              src="./Images/webp/professional-range.webp"
+              alt="Image of the professional range of the Eurocave wine cabinets."
+            />
             <span class="tag">Storing</span>
             <span class="tag">Serving</span>
             <span class="tag">46 - 444 bottles</span>
             <p class="name">Professional Range</p>
           </div>
           <div class="other-product-card">
-            <img
-              src="./Images/EP-RESTAURANT-PAPA-DUBAI-INSPIRATIONx4-WINE-BAR__(3).jpg"
-              alt=""
-            />
+            <img src="./Images/webp/eurocave-dubai.webp" alt="" />
             <span class="tag">Aging</span>
             <span class="tag">Serving</span>
             <span class="tag">Preserving</span>
@@ -387,8 +399,9 @@
                   class="testimonial-image"
                 />
                 <blockquote class="testimonial-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                  ut minus deserunt? Lorem ipsum dolor sit amet.
+                  The EuroCave wine cabinets have been a fantastic addition to
+                  our hotel. They are not only functional, but they also add a
+                  touch of elegance to our wine displays.
                 </blockquote>
                 <p class="testimonial-name">&mdash; Sarova Panafric</p>
               </figure>
@@ -399,8 +412,9 @@
                   class="testimonial-image"
                 />
                 <blockquote class="testimonial-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                  ut minus deserunt? Lorem ipsum dolor sit amet.
+                  They not only keep our wines at the perfect temperature and
+                  humidity level, but they also look sleek and modern in our
+                  restaurant.
                 </blockquote>
                 <p class="testimonial-name">&mdash; Sierra Restaurant</p>
               </figure>
@@ -411,10 +425,11 @@
                   class="testimonial-image"
                 />
                 <blockquote class="testimonial-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                  ut minus deserunt? Lorem ipsum dolor sit amet.
+                  EuroCave wine cabinets are by far the best. They are not only
+                  aesthetically pleasing, but they also provide the perfect
+                  environment for my wines to age gracefully.
                 </blockquote>
-                <p class="testimonial-name">&mdash; John Doe</p>
+                <p class="testimonial-name">&mdash; Private Collector</p>
               </figure>
               <figure class="testimonial">
                 <img
@@ -423,8 +438,9 @@
                   class="testimonial-image"
                 />
                 <blockquote class="testimonial-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                  ut minus deserunt? Lorem ipsum dolor sit amet.
+                  EuroCave wine cabinets have exceeded my expectations. They are
+                  reliable, easy to use, and provide the ideal storage
+                  conditions for my wines.
                 </blockquote>
                 <p class="testimonial-name">&mdash; John Doe</p>
               </figure>
@@ -525,18 +541,19 @@
                 </div>
                 <div class="">
                   <span><ion-icon name="mail-outline"></ion-icon></span>
-                  <a href="mailto:loremipsum@mail.com">loremipsum@mail.com</a>
+                  <a href="mailto:sales@sunfablimited.com"
+                    >sales@sunfablimited.com</a
+                  >
                 </div>
                 <div class="">
                   <span><ion-icon name="call-outline"></ion-icon></span>
-                  <a href="tel:+254741282800">+254 123 456789</a>
+                  <a href="tel:+254731677046">+254 731 677046</a>
                 </div>
                 <ul class="sci">
                   <li>
-                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
                     <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
                   </li>
                 </ul>
               </div>
@@ -548,6 +565,7 @@
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                title="Eurocave by Semfeb showroom location"
               ></iframe>
             </div>
           </div>
@@ -560,12 +578,16 @@
           <a href="#" class="footer-logo">
             <img
               src="./Images/logo_eurocave.f5db0ba2.svg"
-              alt=""
+              alt="Logo of Eurocave"
               class="logo"
             />
           </a>
           <a href="#" class="footer-logo">
-            <img src="./Images/Semfeb_Logo1_1.png" alt="" class="logo" />
+            <img
+              src="./Images/Semfeb_Logo1_1.png"
+              alt="Logo of Semfeb Limited"
+              class="logo"
+            />
           </a>
 
           <ul class="social-links">
@@ -595,9 +617,9 @@
             <p>Shelter Afrique House, Mamlaka road.</p>
             <p>
               <a class="footer-link" href="tel:+254 123 456789"
-                >+254 123 456789</a
+                >+254 731 677046</a
               >
-              <a class="footer-link" href="mailto:hello@semfeb.com"
+              <a class="footer-link" href="mailto:sales@sunfablimited.com"
                 >hello@semfeb.com</a
               >
             </p>
