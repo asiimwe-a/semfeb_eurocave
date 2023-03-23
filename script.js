@@ -15,8 +15,16 @@ const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
+    // const href = link.getAttribute("href");
     const href = link.getAttribute("href");
+
+    // Exclude external links
+    if (href && (href.startsWith("http://") || href.startsWith("https://") || href.startsWith("tel:") || href.startsWith("mailto:") || href.endsWith(".pdf"))) {
+      return;
+    }
+
+    e.preventDefault();
 
     // Scroll back to top
     if (href === "#")
