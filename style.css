@@ -540,7 +540,7 @@ grid-template-columns: repeat(4,1fr);
   }
   
   .card1 {
-    background-image: url(./Images/webp/cellar-with-bottles-c.webp);
+    background-image: url(./Images/webp/eurocave-wine-wall-cigar-humidor-home-UAE.webp);
   }
   
   .card2 {
@@ -548,11 +548,11 @@ grid-template-columns: repeat(4,1fr);
   }
   
   .card3 {
-    background-image: url(./Images/webp/sarova-panafrica-private-dining-c.webp);
+    background-image: url(./Images/Testimonials/sarova-panafric-story.webp);
   }
 
   .card4 {
-    background-image: url(./Images/webp/private-collector-c.webp);
+    background-image: url(./Images/webp/eurocave-dubai-UAE-revelation.webp);
   }
   
   .card-details {
